@@ -477,7 +477,7 @@ int LauncherPrivate::render_tab0(bool &done)
         ImGui::PushFont(fntPixy);
     if (!basePath || !basePath->str_value || basePath->str_value->IsEmpty()) {
         // message = "Choose directory with original Doom 3 files. You can buy it on Steam";
-        message = "Выбирите папку в которой расположена копия оригинальной игры Doom 3. Игру можно купить на Steam.";
+        message = "Выберите папку, в которой расположена копия оригинальной игры Doom 3. Игру можно купить на Steam.";
         ImGui::TextWrapped(message.c_str());
         if (CenterButton("Ссылка на Steam")) {
             // SDL_OpenURL("https://store.steampowered.com/app/208200/DOOM_3/");
